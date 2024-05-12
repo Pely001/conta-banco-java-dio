@@ -1,18 +1,9 @@
-## Getting Started
+Introdução de uma classe Transação: Uma nova classe Transacao foi introduzida para representar transações individuais. Cada transação contém informações como o tipo de transação (depósito, saque, transferência), o valor da transação, a data e hora em que ocorreu e uma descrição adicional, se necessário.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Rastreamento de transações: A classe Conta foi atualizada para rastrear todas as transações associadas a uma conta. Toda vez que uma operação (depósito, saque, transferência) é realizada, uma nova instância de Transacao é criada e adicionada à lista de transações da conta.
 
-## Folder Structure
+Enumeração para tipos de transação: Uma enumeração TipoTransacao foi introduzida para representar os diferentes tipos de transações possíveis, como depósito, saque e transferência.
 
-The workspace contains two folders by default, where:
+Consulta de histórico de transações: Foi adicionado um método à classe Conta para permitir a consulta do histórico completo de transações associadas à conta. Isso oferece aos clientes e ao sistema a capacidade de visualizar todas as atividades financeiras realizadas em uma conta ao longo do tempo.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Essas melhorias proporcionam uma funcionalidade mais robusta e informativa ao sistema bancário, permitindo um melhor rastreamento e gerenciamento das transações financeiras dos clientes.
